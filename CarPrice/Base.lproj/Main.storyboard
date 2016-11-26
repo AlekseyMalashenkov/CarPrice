@@ -77,7 +77,7 @@
                                     <action selector="CalculateCarCost:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GIV-BB-sgU"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Тут будет рассчитана стоимость вашего автомобиля" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XAn-7T-tYh">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Тут будет рассчитана стоимость вашего автомобиля" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAn-7T-tYh">
                                 <rect key="frame" x="16" y="376" width="343" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
