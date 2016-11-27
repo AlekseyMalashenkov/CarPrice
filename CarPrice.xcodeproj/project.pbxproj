@@ -12,6 +12,7 @@
 		AA26D7A21DEA2C000086DD5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA26D7A01DEA2C000086DD5E /* Main.storyboard */; };
 		AA26D7A41DEA2C000086DD5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA26D7A31DEA2C000086DD5E /* Assets.xcassets */; };
 		AA26D7A71DEA2C000086DD5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA26D7A51DEA2C000086DD5E /* LaunchScreen.storyboard */; };
+		AA88998C1DEACA4E00752D76 /* OSAGOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA88998B1DEACA4E00752D76 /* OSAGOViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AA26D7A31DEA2C000086DD5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA26D7A61DEA2C000086DD5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA26D7A81DEA2C000086DD5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA88998B1DEACA4E00752D76 /* OSAGOViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSAGOViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				AA26D79C1DEA2C000086DD5E /* AppDelegate.swift */,
 				AA26D79E1DEA2C000086DD5E /* ViewController.swift */,
 				AA26D7A01DEA2C000086DD5E /* Main.storyboard */,
+				AA88998B1DEACA4E00752D76 /* OSAGOViewController.swift */,
 				AA26D7A31DEA2C000086DD5E /* Assets.xcassets */,
 				AA26D7A51DEA2C000086DD5E /* LaunchScreen.storyboard */,
 				AA26D7A81DEA2C000086DD5E /* Info.plist */,
@@ -139,6 +142,7 @@
 			files = (
 				AA26D79F1DEA2C000086DD5E /* ViewController.swift in Sources */,
 				AA26D79D1DEA2C000086DD5E /* AppDelegate.swift in Sources */,
+				AA88998C1DEACA4E00752D76 /* OSAGOViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +306,7 @@
 				AA26D7AD1DEA2C000086DD5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
