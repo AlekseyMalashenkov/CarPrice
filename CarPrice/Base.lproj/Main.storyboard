@@ -22,112 +22,127 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvu-D2-KLY">
-                                <rect key="frame" x="0.0" y="170" width="226" height="188"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EeZ-ly-YEC">
+                                <rect key="frame" x="8" y="26" width="398" height="607"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="752" verticalCompressionResistancePriority="755" text="Защита картера" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18d-by-oY0">
-                                        <rect key="frame" x="77" y="64" width="129" height="21"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvu-D2-KLY">
+                                        <rect key="frame" x="20" y="150" width="360" height="190"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="752" verticalCompressionResistancePriority="755" text="Защита картера" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18d-by-oY0">
+                                                <rect key="frame" x="77" y="64" width="129" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bgC-N4-hVF">
+                                                <rect key="frame" x="20" y="98" width="51" height="31"/>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ObE-uR-gsn">
+                                                <rect key="frame" x="20" y="20" width="51" height="31"/>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="754" text="Зимние шины" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fj-WN-Hdv">
+                                                <rect key="frame" x="77" y="103" width="111" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5b-a0-Ysh">
+                                                <rect key="frame" x="20" y="137" width="51" height="31"/>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vzJ-3K-Ssl">
+                                                <rect key="frame" x="20" y="59" width="51" height="31"/>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Литые диски" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jui-uF-u7Q">
+                                                <rect key="frame" x="77" y="142" width="104" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="754" verticalCompressionResistancePriority="751" text="Коврики" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGk-PE-gMj">
+                                                <rect key="frame" x="77" y="25" width="68" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ObE-uR-gsn" firstAttribute="centerY" secondItem="EGk-PE-gMj" secondAttribute="centerY" id="16x-80-kMz"/>
+                                            <constraint firstItem="bgC-N4-hVF" firstAttribute="centerY" secondItem="2Fj-WN-Hdv" secondAttribute="centerY" id="2AY-1i-C2D"/>
+                                            <constraint firstItem="EGk-PE-gMj" firstAttribute="leading" secondItem="18d-by-oY0" secondAttribute="leading" id="8PR-dm-WOQ"/>
+                                            <constraint firstAttribute="height" constant="190" id="Dr4-Po-dv8"/>
+                                            <constraint firstItem="vzJ-3K-Ssl" firstAttribute="leading" secondItem="bgC-N4-hVF" secondAttribute="leading" id="KmA-r7-2hY"/>
+                                            <constraint firstItem="ObE-uR-gsn" firstAttribute="top" secondItem="uvu-D2-KLY" secondAttribute="top" constant="20" id="Ly7-Pd-j1P"/>
+                                            <constraint firstItem="g5b-a0-Ysh" firstAttribute="top" secondItem="bgC-N4-hVF" secondAttribute="bottom" constant="8" symbolic="YES" id="NC4-IV-WCf"/>
+                                            <constraint firstItem="bgC-N4-hVF" firstAttribute="top" secondItem="vzJ-3K-Ssl" secondAttribute="bottom" constant="8" symbolic="YES" id="SyF-lh-C7t"/>
+                                            <constraint firstItem="ObE-uR-gsn" firstAttribute="leading" secondItem="vzJ-3K-Ssl" secondAttribute="leading" id="bvY-60-suT"/>
+                                            <constraint firstItem="18d-by-oY0" firstAttribute="leading" secondItem="2Fj-WN-Hdv" secondAttribute="leading" id="iDJ-BG-It9"/>
+                                            <constraint firstItem="vzJ-3K-Ssl" firstAttribute="centerY" secondItem="18d-by-oY0" secondAttribute="centerY" id="jrF-a4-dE3"/>
+                                            <constraint firstItem="ObE-uR-gsn" firstAttribute="leading" secondItem="uvu-D2-KLY" secondAttribute="leading" constant="20" id="l83-jw-cMx"/>
+                                            <constraint firstItem="g5b-a0-Ysh" firstAttribute="centerY" secondItem="jui-uF-u7Q" secondAttribute="centerY" id="mqt-Nq-Rz0"/>
+                                            <constraint firstItem="EGk-PE-gMj" firstAttribute="leading" secondItem="ObE-uR-gsn" secondAttribute="trailing" constant="8" symbolic="YES" id="nWH-RC-mva"/>
+                                            <constraint firstItem="bgC-N4-hVF" firstAttribute="leading" secondItem="g5b-a0-Ysh" secondAttribute="leading" id="qdP-0c-vSB"/>
+                                            <constraint firstItem="2Fj-WN-Hdv" firstAttribute="leading" secondItem="jui-uF-u7Q" secondAttribute="leading" id="u8X-73-kgO"/>
+                                            <constraint firstItem="vzJ-3K-Ssl" firstAttribute="top" secondItem="ObE-uR-gsn" secondAttribute="bottom" constant="8" symbolic="YES" id="zlz-x3-s6Z"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="756" image="Cadillac Escalade" translatesAutoresizingMaskIntoConstraints="NO" id="LsR-TE-Hls">
+                                        <rect key="frame" x="125" y="20" width="149" height="93"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="93" id="Qvb-4U-CLo"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Тут будет рассчитана стоимость вашего автомобиля" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAn-7T-tYh">
+                                        <rect key="frame" x="40" y="386" width="321" height="132"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="132" id="9RN-cc-yxh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadillac Escalade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEb-TS-wbJ">
+                                        <rect key="frame" x="133" y="121" width="134" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bgC-N4-hVF">
-                                        <rect key="frame" x="20" y="98" width="51" height="31"/>
-                                    </switch>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ObE-uR-gsn">
-                                        <rect key="frame" x="20" y="20" width="51" height="31"/>
-                                    </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="754" text="Зимние шины" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fj-WN-Hdv">
-                                        <rect key="frame" x="77" y="103" width="111" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5b-a0-Ysh">
-                                        <rect key="frame" x="20" y="137" width="51" height="31"/>
-                                    </switch>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vzJ-3K-Ssl">
-                                        <rect key="frame" x="20" y="59" width="51" height="31"/>
-                                    </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Литые диски" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jui-uF-u7Q">
-                                        <rect key="frame" x="77" y="142" width="104" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="754" verticalCompressionResistancePriority="751" text="Коврики" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGk-PE-gMj">
-                                        <rect key="frame" x="77" y="25" width="68" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fve-CV-mMe">
+                                        <rect key="frame" x="85" y="348" width="231" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="231" id="VAJ-LK-gi3"/>
+                                        </constraints>
+                                        <state key="normal" title="Рассчитать стоимость машины"/>
+                                        <connections>
+                                            <action selector="CalculateCarCost:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GIV-BB-sgU"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="ObE-uR-gsn" firstAttribute="centerY" secondItem="EGk-PE-gMj" secondAttribute="centerY" id="16x-80-kMz"/>
-                                    <constraint firstItem="bgC-N4-hVF" firstAttribute="centerY" secondItem="2Fj-WN-Hdv" secondAttribute="centerY" id="2AY-1i-C2D"/>
-                                    <constraint firstItem="EGk-PE-gMj" firstAttribute="leading" secondItem="18d-by-oY0" secondAttribute="leading" id="8PR-dm-WOQ"/>
-                                    <constraint firstItem="vzJ-3K-Ssl" firstAttribute="leading" secondItem="bgC-N4-hVF" secondAttribute="leading" id="KmA-r7-2hY"/>
-                                    <constraint firstItem="ObE-uR-gsn" firstAttribute="top" secondItem="uvu-D2-KLY" secondAttribute="top" constant="20" id="Ly7-Pd-j1P"/>
-                                    <constraint firstItem="g5b-a0-Ysh" firstAttribute="top" secondItem="bgC-N4-hVF" secondAttribute="bottom" constant="8" symbolic="YES" id="NC4-IV-WCf"/>
-                                    <constraint firstItem="bgC-N4-hVF" firstAttribute="top" secondItem="vzJ-3K-Ssl" secondAttribute="bottom" constant="8" symbolic="YES" id="SyF-lh-C7t"/>
-                                    <constraint firstItem="ObE-uR-gsn" firstAttribute="leading" secondItem="vzJ-3K-Ssl" secondAttribute="leading" id="bvY-60-suT"/>
-                                    <constraint firstItem="18d-by-oY0" firstAttribute="leading" secondItem="2Fj-WN-Hdv" secondAttribute="leading" id="iDJ-BG-It9"/>
-                                    <constraint firstItem="vzJ-3K-Ssl" firstAttribute="centerY" secondItem="18d-by-oY0" secondAttribute="centerY" id="jrF-a4-dE3"/>
-                                    <constraint firstItem="ObE-uR-gsn" firstAttribute="leading" secondItem="uvu-D2-KLY" secondAttribute="leading" constant="20" id="l83-jw-cMx"/>
-                                    <constraint firstItem="g5b-a0-Ysh" firstAttribute="centerY" secondItem="jui-uF-u7Q" secondAttribute="centerY" id="mqt-Nq-Rz0"/>
-                                    <constraint firstItem="EGk-PE-gMj" firstAttribute="leading" secondItem="ObE-uR-gsn" secondAttribute="trailing" constant="8" symbolic="YES" id="nWH-RC-mva"/>
-                                    <constraint firstItem="bgC-N4-hVF" firstAttribute="leading" secondItem="g5b-a0-Ysh" secondAttribute="leading" id="qdP-0c-vSB"/>
-                                    <constraint firstItem="2Fj-WN-Hdv" firstAttribute="leading" secondItem="jui-uF-u7Q" secondAttribute="leading" id="u8X-73-kgO"/>
-                                    <constraint firstItem="vzJ-3K-Ssl" firstAttribute="top" secondItem="ObE-uR-gsn" secondAttribute="bottom" constant="8" symbolic="YES" id="zlz-x3-s6Z"/>
+                                    <constraint firstItem="LsR-TE-Hls" firstAttribute="centerX" secondItem="EeZ-ly-YEC" secondAttribute="centerX" constant="0.5" id="3Hf-3w-2qf"/>
+                                    <constraint firstItem="xEb-TS-wbJ" firstAttribute="centerX" secondItem="uvu-D2-KLY" secondAttribute="centerX" id="5Kn-ui-0fc"/>
+                                    <constraint firstAttribute="bottom" secondItem="XAn-7T-tYh" secondAttribute="bottom" constant="20" id="Br5-Pb-XYa"/>
+                                    <constraint firstItem="uvu-D2-KLY" firstAttribute="top" secondItem="xEb-TS-wbJ" secondAttribute="bottom" constant="8" symbolic="YES" id="IvS-23-9Q5"/>
+                                    <constraint firstAttribute="trailing" secondItem="uvu-D2-KLY" secondAttribute="trailing" constant="20" id="IxH-H5-pg1"/>
+                                    <constraint firstItem="xEb-TS-wbJ" firstAttribute="centerX" secondItem="fve-CV-mMe" secondAttribute="centerX" id="JlV-hM-BHy"/>
+                                    <constraint firstItem="uvu-D2-KLY" firstAttribute="leading" secondItem="EeZ-ly-YEC" secondAttribute="leading" constant="20" id="MH3-cp-SqZ"/>
+                                    <constraint firstItem="xEb-TS-wbJ" firstAttribute="top" secondItem="LsR-TE-Hls" secondAttribute="bottom" constant="8" symbolic="YES" id="Wcf-HY-CFZ"/>
+                                    <constraint firstItem="LsR-TE-Hls" firstAttribute="centerX" secondItem="xEb-TS-wbJ" secondAttribute="centerX" id="Y7S-mJ-gYq"/>
+                                    <constraint firstItem="XAn-7T-tYh" firstAttribute="top" secondItem="fve-CV-mMe" secondAttribute="bottom" constant="8" symbolic="YES" id="cxs-4C-3k7"/>
+                                    <constraint firstItem="LsR-TE-Hls" firstAttribute="leading" secondItem="EeZ-ly-YEC" secondAttribute="leadingMargin" constant="117" id="dS0-Kb-aYb"/>
+                                    <constraint firstItem="XAn-7T-tYh" firstAttribute="leading" secondItem="EeZ-ly-YEC" secondAttribute="leading" constant="40" id="faf-mI-0dw"/>
+                                    <constraint firstItem="LsR-TE-Hls" firstAttribute="top" secondItem="EeZ-ly-YEC" secondAttribute="top" constant="20" id="fxa-NK-Bma"/>
+                                    <constraint firstItem="fve-CV-mMe" firstAttribute="top" secondItem="uvu-D2-KLY" secondAttribute="bottom" constant="8" symbolic="YES" id="lws-QL-lQ8"/>
+                                    <constraint firstItem="fve-CV-mMe" firstAttribute="centerX" secondItem="XAn-7T-tYh" secondAttribute="centerX" id="npZ-AH-Un1"/>
                                 </constraints>
-                            </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Тут будет рассчитана стоимость вашего автомобиля" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAn-7T-tYh">
-                                <rect key="frame" x="47" y="397" width="320" height="205"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadillac Escalade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEb-TS-wbJ">
-                                <rect key="frame" x="125" y="141" width="134" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="756" image="Cadillac Escalade" translatesAutoresizingMaskIntoConstraints="NO" id="LsR-TE-Hls">
-                                <rect key="frame" x="117" y="40" width="150" height="93"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="93" id="Qvb-4U-CLo"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fve-CV-mMe">
-                                <rect key="frame" x="77" y="359" width="231" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="231" id="VAJ-LK-gi3"/>
-                                </constraints>
-                                <state key="normal" title="Рассчитать стоимость машины"/>
-                                <connections>
-                                    <action selector="CalculateCarCost:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GIV-BB-sgU"/>
-                                </connections>
-                            </button>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="fve-CV-mMe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="359" id="9eo-4c-aOL"/>
-                            <constraint firstAttribute="trailing" secondItem="uvu-D2-KLY" secondAttribute="trailing" constant="188" id="D8v-dQ-tvF"/>
-                            <constraint firstItem="LsR-TE-Hls" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="H0U-QB-4e0"/>
-                            <constraint firstItem="XAn-7T-tYh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="MmZ-OQ-UwY"/>
-                            <constraint firstItem="uvu-D2-KLY" firstAttribute="top" secondItem="xEb-TS-wbJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Wcb-sU-CA9"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XAn-7T-tYh" secondAttribute="bottom" constant="85" id="Zfk-05-7w6"/>
-                            <constraint firstItem="uvu-D2-KLY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cHt-hL-F3h"/>
-                            <constraint firstItem="xEb-TS-wbJ" firstAttribute="centerX" secondItem="LsR-TE-Hls" secondAttribute="centerX" id="fKV-ru-aDh"/>
-                            <constraint firstItem="fve-CV-mMe" firstAttribute="centerX" secondItem="xEb-TS-wbJ" secondAttribute="centerX" id="fLK-ys-b9V"/>
-                            <constraint firstItem="xEb-TS-wbJ" firstAttribute="top" secondItem="LsR-TE-Hls" secondAttribute="bottom" constant="8" symbolic="YES" id="guq-XC-IzX"/>
-                            <constraint firstItem="XAn-7T-tYh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lZS-4G-irp"/>
-                            <constraint firstItem="LsR-TE-Hls" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-15" id="oLv-b7-Kun"/>
-                            <constraint firstItem="fve-CV-mMe" firstAttribute="top" secondItem="uvu-D2-KLY" secondAttribute="bottom" constant="1" id="rGA-J1-Oej"/>
-                            <constraint firstItem="LsR-TE-Hls" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="97" id="ukn-kB-O56"/>
-                            <constraint firstItem="XAn-7T-tYh" firstAttribute="top" secondItem="fve-CV-mMe" secondAttribute="bottom" constant="8" symbolic="YES" id="xJk-0q-Ek2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EeZ-ly-YEC" secondAttribute="bottom" constant="54" id="NwF-ow-JiT"/>
+                            <constraint firstItem="EeZ-ly-YEC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-12" id="ill-um-MjA"/>
+                            <constraint firstItem="EeZ-ly-YEC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="6" id="kyU-rL-9Zh"/>
+                            <constraint firstItem="EeZ-ly-YEC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s5Z-QL-pc6"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Car Price" id="4bw-KG-3Yn"/>
@@ -141,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1982.608695652174" y="392.93478260869568"/>
+            <point key="canvasLocation" x="1981.5999999999999" y="392.65367316341832"/>
         </scene>
         <!--OSAGO Price-->
         <scene sceneID="fue-sp-Pfa">
