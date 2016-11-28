@@ -15,7 +15,9 @@ class OSAGOViewController: UIViewController {
     @IBOutlet weak var slidePower: UISlider!
     @IBOutlet weak var coefficientPower: UILabel!
     @IBOutlet weak var totalCostOSAGO: UILabel!
-    
+    let townCoef = 1.8
+    let driveCoef = 1.8
+    let bonusCoef = 1.0
     var tmpAge = 0.0
     @IBAction func AgeChange(_ sender: UISlider) {
         let age = slideAge.value
@@ -32,6 +34,9 @@ class OSAGOViewController: UIViewController {
             tmpAge = 1.8
         }
         coefficientAge.text = "Коэффициент возраста = \(tmpAge)"
+        let totalPrice = 1980.0 * townCoef * driveCoef * bonusCoef * tmpPower * tmpAge
+        
+        totalCostOSAGO.text = "Итого: \(totalPrice)р"
     }
     var tmpPower = 0.0
     @IBAction func PowerChange(_ sender: UISlider) {
@@ -52,10 +57,9 @@ class OSAGOViewController: UIViewController {
             tmpPower = 1.6
         }
         coefficientPower.text = "Коэффициент мощности = \(tmpPower)"
-        let townCoef = 1.8
-        let driveCoef = 1.8
-        let bonusCoef = 1.0
+        
         let totalPrice = 1980.0 * townCoef * driveCoef * bonusCoef * tmpPower * tmpAge
+        
         totalCostOSAGO.text = "Итого: \(totalPrice)р"
     }
     
