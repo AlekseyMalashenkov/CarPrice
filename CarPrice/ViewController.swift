@@ -14,12 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var crankcaseProtectionInCar: UISwitch!
     @IBOutlet weak var winterTiresInCar: UISwitch!
     @IBOutlet weak var alloyWheelsInCar: UISwitch!
-    let calcPrice = CalculateCarPrice()
+    
     
     @IBAction func CalculateCarCost(_ sender: UIButton) {
-        
-        
-        
+        let calcPrice = CalculateCarPrice()
         outCost.text = calcPrice.makePrice(matsCar: matsInCar, crankCar: crankcaseProtectionInCar, winterCar: winterTiresInCar, alloyCar: alloyWheelsInCar)
     }
     
