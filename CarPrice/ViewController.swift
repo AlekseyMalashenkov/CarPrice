@@ -19,10 +19,8 @@ class ViewController: UIViewController {
     @IBAction func CalculateCarCost(_ sender: UIButton) {
         
         
-        let total = calcPrice.makePrice(matsCar: matsInCar, crankCar: crankcaseProtectionInCar, winterCar: winterTiresInCar, alloyCar: alloyWheelsInCar)
         
-        
-        outCost.text = "Цена в выбранной комплектации: \(calcPrice.startPrice + total)р. \nВ том числе доп. оборудование: \(total)р. \nСкидка на доп. оборудование (10%): \(total / 100)р. \nИтого: \(calcPrice.startPrice + total - (total / 100))р."
+        outCost.text = calcPrice.makePrice(matsCar: matsInCar, crankCar: crankcaseProtectionInCar, winterCar: winterTiresInCar, alloyCar: alloyWheelsInCar)
     }
     
     @IBOutlet weak var outCost: UITextView!

@@ -16,7 +16,7 @@ class CalculateCarPrice: NSObject {
     let alloyWheels = 60000.0
     var sumDop = 0.0
     
-    func makePrice(matsCar: UISwitch, crankCar: UISwitch, winterCar: UISwitch, alloyCar: UISwitch) -> Double {
+    func makePrice(matsCar: UISwitch, crankCar: UISwitch, winterCar: UISwitch, alloyCar: UISwitch) -> String {
         if matsCar.isOn {
             sumDop += mats
         }
@@ -29,6 +29,6 @@ class CalculateCarPrice: NSObject {
         if alloyCar.isOn {
             sumDop += alloyWheels
         }
-        return sumDop
+        return "Цена в выбранной комплектации: \(startPrice + sumDop)р. \nВ том числе доп. оборудование: \(sumDop)р. \nСкидка на доп. оборудование (10%): \(sumDop / 100)р. \nИтого: \(startPrice + sumDop - (sumDop / 100))р."
     }
 }
