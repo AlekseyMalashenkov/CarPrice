@@ -17,12 +17,12 @@ class ViewController: UIViewController {
     let calcPrice = CalculateCarPrice()
     
     @IBAction func CalculateCarCost(_ sender: UIButton) {
-        let startPrice = 4500000.0
+        
         
         let total = calcPrice.makePrice(matsCar: matsInCar, crankCar: crankcaseProtectionInCar, winterCar: winterTiresInCar, alloyCar: alloyWheelsInCar)
         
         
-        outCost.text = "Цена в выбранной комплектации: \(startPrice)р. \nВ том числе доп. оборудование: \(total)р. \nСкидка на доп. оборудование (10%): \(total / 100)р. \nИтого: \(startPrice + total - (total / 100))р."
+        outCost.text = "Цена в выбранной комплектации: \(calcPrice.startPrice + total)р. \nВ том числе доп. оборудование: \(total)р. \nСкидка на доп. оборудование (10%): \(total / 100)р. \nИтого: \(calcPrice.startPrice + total - (total / 100))р."
     }
     
     @IBOutlet weak var outCost: UITextView!
