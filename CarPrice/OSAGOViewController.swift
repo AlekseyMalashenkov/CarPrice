@@ -9,58 +9,27 @@
 import UIKit
 
 class OSAGOViewController: UIViewController {
-
+    let calcPerem = CalcOSAGO()
     @IBOutlet weak var slideAge: UISlider!
     @IBOutlet weak var coefficientAge: UILabel!
     @IBOutlet weak var slidePower: UISlider!
     @IBOutlet weak var coefficientPower: UILabel!
     @IBOutlet weak var totalCostOSAGO: UILabel!
-    let townCoef = 1.8
-    let driveCoef = 1.8
-    let bonusCoef = 1.0
-    var tmpAge = 0.0
+    
     @IBAction func AgeChange(_ sender: UISlider) {
-        let age = slideAge.value
+        let agePerem = calcPerem.age(sliderAge: slideAge)
+        coefficientAge.text = "Коэффициент возраста = \(agePerem)"
         
-        
-        switch age {
-        case 21...25:
-            tmpAge = 1.7
-        case 26...30:
-            tmpAge = 1.6
-        case 30...55:
-            tmpAge = 1.0
-        default:
-            tmpAge = 1.8
-        }
-        coefficientAge.text = "Коэффициент возраста = \(tmpAge)"
-        let totalPrice = 1980.0 * townCoef * driveCoef * bonusCoef * tmpPower * tmpAge
-        
-        totalCostOSAGO.text = "Итого: \(totalPrice)р"
+        let tmp1 = calcPerem.calcTotalPrice(tmpAge: agePerem, tpmPower: calcPerem.power(sliderPower: slidePower))
+        totalCostOSAGO.text = "Итого: \(tmp1)р"
     }
-    var tmpPower = 0.0
+    
     @IBAction func PowerChange(_ sender: UISlider) {
-        let power = slidePower.value
+        let powerPerem = calcPerem.power(sliderPower: slidePower)
+        coefficientPower.text = "Коэффициент мощности = \(powerPerem)"
         
-        switch power {
-        case 49...50:
-            tmpPower = 0.6
-        case 51...70:
-            tmpPower = 1.0
-        case 71...100:
-            tmpPower = 1.1
-        case 101...120:
-            tmpPower = 1.2
-        case 121...150:
-            tmpPower = 1.4
-        default:
-            tmpPower = 1.6
-        }
-        coefficientPower.text = "Коэффициент мощности = \(tmpPower)"
-        
-        let totalPrice = 1980.0 * townCoef * driveCoef * bonusCoef * tmpPower * tmpAge
-        
-        totalCostOSAGO.text = "Итого: \(totalPrice)р"
+        let tmp2 = calcPerem.calcTotalPrice(tmpAge:calcPerem.age(sliderAge: slideAge), tpmPower: powerPerem)
+        totalCostOSAGO.text = "Итого: \(tmp2)р"
     }
     
     
